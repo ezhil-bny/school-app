@@ -9,6 +9,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src ="js/Schoolscripts.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
@@ -17,24 +18,62 @@
             <li class="nav-item active" style="padding-left:1em">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
+            <div class="dropdown">
             <li class="nav-item" style="padding-left:1em">
-                <a class="nav-link" href="#">Admission <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Admission<span class="sr-only">(current)</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Introduction</a>
+                    <a href="#">Application Fee</a>
+                    <a href="#">Online Application</a>
+                    <a href="#">Admission Status</a>
+                </div>
             </li>
+            </div>
+            <div class="dropdown">
             <li class="nav-item" style="padding-left:1em">
                 <a class="nav-link" href="#">Academics <span class="sr-only">(current)</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Departments</a>
+                    <a href="#">Curriculum General Plan</a>
+                    <a href="#">Online Application</a>
+                    <a href="#">Activities</a>
+                </div>
             </li>
+            </div>
+            <div class="dropdown">
             <li class="nav-item" style="padding-left:1em">
                 <a class="nav-link" href="#">Programs <span class="sr-only">(current)</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Athletics</a>
+                    <a href="#">SchoolPlay</a>
+                    <a href="#">Hindi Classes</a>
+                    <a href="#">Abacus Classes</a>
+                </div>
             </li>
-            <li class="nav-item" style="padding-left:1em">
-                <a class="nav-link" href="#">Athletics <span class="sr-only">(current)</span></a>
-            </li>
+            </div>
+            <div class="dropdown">
             <li class="nav-item" style="padding-left:1em">
             <a class="nav-link" href="#">Alumini <span class="sr-only">(current)</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Alumnae Association</a>
+                    <a href="#">Committee Members</a>
+                    <a href="#">Alumnae Membership Form</a>
+                    <a href="#">Alumnae Login</a>
+                </div>
           </li>
+            </div>
+            <div class="dropdown">
             <li class="nav-item" style="padding-left:1em">
                 <a class="nav-link" href="#">Contacts <span class="sr-only">(current)</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Department Directory</a>
+                    <a href="#">Staff Directory</a>
+                    <a href="#" data-toggle="popover" title="Little Flower Children's School #51, XXXXX Road, Coimbatore 600 006"
+                              data-trigger="focus" data-content="Mrs:Rekha Dharshana -XXXXXXXXXXXX
+                               MR.AnandRam  -XXXXXXXX" >Principal Contact Information</a>
+                </div>
             </li>
+            </div>
             <form class="navbar-form navbar-left" action="" style="padding-left:1em">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="search">
@@ -51,7 +90,11 @@
             <li style="padding-left:1em"><a href="#"><span class="fa fa-twitter"></span></a></li>
             <li style="padding-left:1em"><a href="#"><span class="fa fa-instagram"></span></a></li>
             <li style="padding-left:1em"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li style="padding-left:1em"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li style="padding-left:1em">
+                <a href="#" data-toggle="modal" data-target="#signInModal"><span class="glyphicon glyphicon-user"></span>Sign In</a>
+            </li>
+           <!-- <li style="padding-left:1em"><a href="htmls/login.html" style="width:auto;" class="glyphicon glyphicon-user">Sign In
+                </a>-->
         </ul>
     </div>
 </nav>
@@ -81,6 +124,26 @@
         <div class="card-body"style="background-color:beige;">
                 <footer ><center>“The most important day of a person’s education is the first day of school, not Graduation Day.” <cite title="Source Title"> – Harry Wong</cite></center></footer>
 
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">SIGN IN</h5>
+
+            </div>
+            <div class="modal-body">
+                UserName <input type ="text">
+                Password <input type ="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
+                    Cancel
+                </button>
+            </div>
         </div>
     </div>
 </div>
