@@ -1,0 +1,16 @@
+.carousel-inner{
+    height: 700px;
+}
+
+.item, img{
+    height: 100% !important;
+    width:  100% !important;
+    border: 1px  green;
+}
+.bg-light {
+    background-color: beige!important;
+}
+
+body {
+    background-color: #117a8b;
+}
